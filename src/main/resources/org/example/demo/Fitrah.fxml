@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #9d9eb0;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.demo.FitrahController">
+   <children>
+      <Pane layoutX="14.0" layoutY="17.0" prefHeight="366.0" prefWidth="268.0" style="-fx-background-color: #e3ecf2; -fx-background-radius: 20; -fx-border-radius: 15; -fx-border-width: 3; -fx-border-color: #6497b1;">
+         <children>
+            <Text layoutX="45.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="zakat fitrah adalah zakat jiwa yang diwajibkan atas setiap diri muslim yang hidup pada bulan ramadhan berupa beras atau makanan pokok." textAlignment="JUSTIFY" wrappingWidth="181.0">
+               <font>
+                  <Font name="Berlin Sans FB" size="12.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="146.0" fitWidth="119.0" layoutX="76.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Assets/logo.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="Back1" layoutX="62.0" layoutY="258.0" mnemonicParsing="false" onAction="#Back1F" prefHeight="32.0" prefWidth="152.0" style="-fx-background-color: #a4c0d6; -fx-background-radius: 20; -fx-border-color: #6497b1; -fx-border-radius: 20; -fx-border-width: 1;" text="Back to Menu" />
+         </children>
+      </Pane>
+      <Pane layoutX="318.0" layoutY="17.0" prefHeight="366.0" prefWidth="268.0" style="-fx-background-color: #e3ecf2; -fx-background-radius: 20; -fx-border-radius: 15; -fx-border-width: 3; -fx-border-color: #6497b1;">
+         <children>
+            <TextField fx:id="familyF" layoutX="58.0" layoutY="77.0" onKeyTyped="#Family1" prefHeight="22.0" prefWidth="149.0" promptText="Orang" style="-fx-background-color: #fcf8f5; -fx-background-radius: 15;">
+               <font>
+                  <Font name="Berlin Sans FB" size="12.0" />
+               </font>
+            </TextField>
+            <Label layoutX="57.0" layoutY="59.0" text="Jumlah Anggota Keluarga :">
+               <font>
+                  <Font name="Berlin Sans FB" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="56.0" layoutY="14.0" text="Hitung Zakat Fitrah">
+               <font>
+                  <Font name="Berlin Sans FB" size="19.0" />
+               </font>
+            </Label>
+            <Button fx:id="buttonF" layoutX="58.0" layoutY="116.0" mnemonicParsing="false" onAction="#calcF" prefHeight="32.0" prefWidth="152.0" style="-fx-background-color: #a4c0d6; -fx-background-radius: 20; -fx-border-color: #6497b1; -fx-border-radius: 20; -fx-border-width: 1;" styleClass="CalcF" text="Kalkulasi Zakat" />
+            <Label layoutX="29.0" layoutY="183.0" text="Jumlah Zakat Fitrah Yang harus dibayar:">
+               <font>
+                  <Font name="Berlin Sans FB" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
